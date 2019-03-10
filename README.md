@@ -30,8 +30,7 @@ For each track the name is the same name as the input file but with a `track_id`
 
 It converts a DAS GIP bioreactor run file by extracting track information in the file as separate files. if there are two tracks in a track file then there will be two track files produced. An extra column with the `track_id` is added to the generated files.
 
-The `run.bat` file uses RScript.exe whose location is defined by the variable `RSCRIPT_EXE`) , default is the RScript.exe which comes with Tercen Desktop installation.
-
+The `run.bat` file uses RScript.exe whose location is defined by the variable `RSCRIPT_EXE`, by default it points to the RScript.exe in the Tercen Desktop installation directory.
 
 #### References
 
