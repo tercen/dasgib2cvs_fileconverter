@@ -1,7 +1,7 @@
 # dasgip2cvs file converter
 
 #### Description
-`dasgip2cvs` converts a DASGIP bioreactor tracker file by selecting all track information within the DASGIP file and outputing them seperately into individual track files
+`dasgip2cvs` converts a DASGIP bioreactor track file by selecting all track information within the DASGIP file and outputing them seperately into individual track files
 
 ##### Usage
 
@@ -23,12 +23,12 @@ Takes a DASGIP file as input
 
 __Output file__
 
-Same name as the input file but with a `track_id` and a timestamp
+For each track the name is the same name as the input file but with a `track_id` and a timestamp
 
 
 ##### Details
 
-It converts a DAS GIP bioreactor run file by extracting track information in the file as seperatate files. if there are two tracks in a tracker file then there will be two track files produced. An extra column with the `track_id` is added to the generated files.
+It converts a DAS GIP bioreactor run file by extracting track information in the file as seperatate files. if there are two tracks in a track file then there will be two track files produced. An extra column with the `track_id` is added to the generated files.
 
 The `run.bat` file uses RScript.exe whose location is defined by the variable `RSCRIPT_EXE`) , default is the RScript.exe which comes with Tercen Desktop installation.
 
