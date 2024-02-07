@@ -13,6 +13,8 @@ cd dasgip2csv_fileconverter
 
 * Double click `dasgip2cvs_fileconverter.Rproj` file
 * This opens RStudio (you require to have RStudio and R installed)
+* From within RStudio open the fileconvert.R file
+* Select all the code and click on the Run button
 * A dialog appears for the user to choose a file to convert
 * A message saying its completed is given.
 * A you have output files created for each track in the directory where the input file was located
