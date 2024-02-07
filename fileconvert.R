@@ -15,7 +15,6 @@ get_name_parts <- function(a_file_name) {
   return(list(basename = basename, path_sans_base_and_ext=path_sans_base_and_ext, path_without_ext = path_without_ext, ext = ext, prefix = prefix))
 }
 
-
 # filename
 file_part <- get_name_parts(in_file_name)
 print (paste("filename is", file_part$basename))
@@ -26,7 +25,12 @@ print("reading started...")
 print("...it may take some time..")
 print("...please wait...")
 
-lines <- readLines(in_file_name, encoding = "UTF-8" )
+# lines <- readLines(in_file_name, encoding = "UTF-8" )
+
+lines <- readLines(in_file_name, encoding = "latin1")
+
+
+
 track_idx <- grep( pattern="TrackData[[:digit:]]", lines)
 empty_idx <- grep( pattern="^$", lines) # empty lines
 track_line <- lines[track_idx]
